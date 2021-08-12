@@ -17,7 +17,7 @@ function setup() {
 
 	engine = Engine.create();
 	world = engine.world;
-     bobDiameter=2*radius
+     bobDiameter=50;
 
 	//Create the Bodies Here.
 
@@ -32,11 +32,7 @@ function setup() {
 	roofObject=new Roof(200,500,20,140)
 
 	rope1=new rope(bobObject1.body,roofObject.body,-bobDiameter*2,0)
-	rope2=new rope(bobObject1.body,roofObject.body,-bobDiameter*2,0)
-	rope3=new rope(bobObject1.body,roofObject.body,-bobDiameter*2,0)
-	rope4=new rope(bobObject1.body,roofObject.body,-bobDiameter*2,0)
-	rope5=new rope(bobObject1.body,roofObject.body,-bobDiameter*2,0)
-
+	
 
 
 }
@@ -52,13 +48,10 @@ function draw() {
   bobObject4.display();
   bobObject5.display();
 
-  roof.display();
+  roofObject.display();
 
   rope1.display();
-  rope2.display();
-  rope3.display();
-  rope4.display();
-  rope5.display();
+  
   
 
 
