@@ -31,7 +31,8 @@ function setup() {
 
 	roofObject=new Roof(200,500,20,140)
 
-	rope1=new rope(bobObject1.body,roofObject.body,-bobDiameter*2,0)
+	rope1=new rope(bobObject1.Body,roofObject.body,-bobDiameter*2,0)
+
 	
 
 
