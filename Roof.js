@@ -3,13 +3,13 @@ class Roof{
           var options={
                isStatic:true
           }
-          this.body = Bodies.rectangle(x,y,height,width,options)
+          this.Body = Bodies.rectangle(x,y,height,width,options)
           this.width=width;
           this.height=height;
-          World.add(world,this.body)
+          World.add(world,this.Body)
      }
      display(){
-          var pos = this.body.position
+          var pos = this.Body.position
           rectMode(CENTER)
           
           rect(pos.x,pos.x,this.width,this.height)
